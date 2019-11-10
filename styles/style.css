@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    font-size: 100%;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Monsterratnl;
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+@font-face {
+    font-family: NunitoSans;
+    src: url("../fonts/NunitoSans-Regular.ttf");
+}
+.main{
+    width: 1366px;
+    margin: auto;
+    height: 1596px;
+}
+.header{
+    height: 100px;
+    overflow: auto;
+}
+.text{
+    height: 313px;
+    background-color: #f6f6f6;
+    overflow: auto;
+}
+.the{
+    font-family: Monsterratnl;
+    font-size: 38px;
+    letter-spacing: -0.49px;
+    font-stretch:semi-condensed;
+    text-align: center;
+    margin-top: 78px;
+    line-height: 2.211;
+}
+.now{
+    font-family: NunitoSans;
+    font-size: 18px;
+    color: #787878;
+    margin-top: 3.8px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.09px;
+    line-height: 28px;
+}
+.logo{
+    margin-left: 98px;
+    float:left;
+    margin-top: 38px;
+}
+.work{
+    height: 899px;
+}
+.image{
+    width:25%;
+    float: left;
+    height: 33.33333%
+}
+.image::before{
+    background-color: rgba(16, 201, 195, .85);
+    content:"";
+    display: block;
+    width: 100%;
+    opacity: 0%;
+    height: 100%;
+    position: relative;
+    transition: opacity 0.12s ease-in-out;
+}
+.image::after{
+    content:"";
+    background: url("../icons/look.svg");
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 48px;
+    top: -174px;
+    left: 147px;
+    opacity: 0%;
+    width:100px;
+    height: 100px;
+    transition: opacity 0.12s ease-in-out;
+    filter:invert();
+}
+.image:hover::after{
+    opacity: 100%;
+}
+.image:hover::before{
+    opacity: 100%;
+}
+
+.first{
+    background-color: #838383;
+}
+.second{
+    background-color: #ddd;
+}
+.headmen{
+    list-style: none;
+    font-family: Monsterratnl;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin-top:42px;
+    margin-left: 1052px;
+}
+.headmen>li{
+    float:left;
+    margin-right: 32px;
+}
+.headmen>li:first-child{
+    color:#10c9c3;
+}
+.footer{
+    height:284px;
+    background-color: #141414;
+}
